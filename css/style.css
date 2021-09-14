@@ -1,0 +1,327 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1228px;
+}
+button,
+input {
+  border: none;
+}
+header,
+footer {
+  background-color: #9ecdd6;
+}
+/* header*/
+
+._header_nav {
+  display: flex;
+  height: 91px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+a._nav_item {
+  color: #fff;
+}
+.header_border_wrapp {
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  width: 190px;
+  height: 65px;
+  background: url(../img/logo.svg) no-repeat;
+}
+.basket {
+  display: flex;
+  width: 39px;
+  height: 39px;
+  background: url(../img/basket.svg) no-repeat;
+}
+._other_nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 42px 0 38px 0;
+}
+._other_nav li > a {
+  color: #878787;
+}
+._other_nav li > a:hover {
+  transition: all 0.5s;
+  color: #00a9c8;
+}
+.wrapp_center {
+  display: flex;
+  justify-content: center;
+}
+/* header*/
+
+.block_img_wrap {
+  display: flex;
+  width: 100%;
+  height: 641px;
+  background: url(../img/big_img.jpg) no-repeat center center;
+  margin-bottom: 58px;
+}
+
+/* sections sales*/
+.block_sales {
+  border: 1.5px solid #eeeeee;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin-bottom: 113px;
+  padding: 25px 45px 42px 42px;
+}
+.sales_product_wrapp {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 28px;
+}
+.sales_item {
+  display: flex;
+  width: 23%;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.item_img_1,
+.item_img_2,
+.item_img_3,
+.item_img_4 {
+  display: flex;
+  width: 260px;
+  height: 339px;
+  background: url(../img/item_1.png) no-repeat center center;
+  margin-bottom: 13px;
+}
+.item_img_2 {
+  background: url(../img/item_2.png) no-repeat center center;
+}
+.item_img_3 {
+  background: url(../img/item_3.png) no-repeat center center;
+}
+.item_img_4 {
+  background: url(../img/item_4.png) no-repeat center center;
+}
+.__sales_item_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px 19px 12px;
+}
+.__sales_buttons_wrapp {
+  display: flex;
+  justify-content: center;
+}
+.__sales_watch_img,
+.__sales_basket {
+  display: flex;
+  width: 110px;
+  height: 41px;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.__sales_basket {
+  border: none;
+  background: #00a9c8;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.__sales_basket:hover {
+  background: #9ecdd6;
+  transition: all 0.5s;
+}
+/* sections sales*/
+
+/* footer */
+footer {
+  width: 100%;
+  height: 146px;
+  margin-bottom: 40px;
+}
+._footer_info_wrapp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: inherit;
+}
+.__footer_logo_block,
+.__footer_text_block,
+.__footer_social_href {
+  display: flex;
+  width: 33.33%;
+}
+/* footer */
+
+/* section payment_text */
+.__section_name {
+  display: flex;
+  margin: 44px 0 25px 0;
+}
+.__section_block_descr {
+  margin-bottom: 166px;
+}
+/* section payment_text */
+
+/* block category */
+.category_item_block {
+  display: flex;
+  width: 100%;
+  margin: 36px 0 71px 0;
+}
+._category_content_block {
+  display: flex;
+  width: 75%;
+  border: 1.5px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 20px 20px 0px 0px;
+  padding: 25px 0;
+  flex-wrap: wrap;
+}
+._left_nav_mnu {
+  display: flex;
+  width: 21.8%;
+  height: 500px;
+  border: 1.5px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-right: 22px;
+}
+.__left_mnu_wrapp {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 22px 22px 20px;
+}
+.__left_mnu_wrapp li {
+  margin-bottom: 20px;
+}
+.__category_content_block_wrapp {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+  height: 477px;
+  justify-content: center;
+}
+.__category_content_block_wrapp:nth-child(n + 2) {
+  margin-bottom: 0;
+}
+.__category_content_block_wrapp > .sales_item {
+  width: 28.5%;
+  margin-right: 30px;
+  height: 477px;
+  align-items: unset;
+}
+.__category_content_block_wrapp > .sales_item:nth-child(n + 3) {
+  margin-right: 0;
+}
+.__category_content_block_wrapp > .sales_item .__sales_buttons_wrapp {
+  margin-top: 20px;
+}
+.__sales_item_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #878787;
+}
+/* block category */
+
+/* block order */
+.all_info_product_block {
+  border: 1.5px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 20px 20px 0px 0px;
+  padding: 25px 23px;
+  margin: 61px 0 137px 0;
+}
+._all_info_product_wrapp {
+  display: flex;
+}
+._product_basket_descr {
+  border: 1.5px solid #eeeeee;
+  border-radius: 25px;
+  width: 57.5%;
+  padding: 35px 21px 21px 21px;
+}
+._total_basket {
+  display: flex;
+  flex-direction: column;
+  width: 457px;
+  height: 236px;
+  margin: 0 19px 0 30px;
+  border: 1.5px solid #eeeeee;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 35px 19px;
+}
+.__order_btn_wrapp {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+._basket_order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 166px;
+  height: 41px;
+  background: #00a9c8;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 24px;
+}
+._order_item_info {
+  display: flex;
+  width: 100%;
+  height: 152px;
+  margin-top: 30px;
+}
+.__item_img_3 {
+  display: flex;
+  width: 164px;
+  height: 152px;
+  background: url(../img/small_img.png) no-repeat center center;
+}
+._order_item_descr {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: inherit;
+  margin-left: 30px;
+}
+/* block order */
